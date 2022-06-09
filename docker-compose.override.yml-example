@@ -1,0 +1,11 @@
+# copy this file to docker-compose.override.yml
+# then replace UID with your uid: id --user
+#              GID with your gid: id --group
+version: '3'
+services:
+  server1:
+    user: "UID:GID"
+  server2:
+    user: "UID:GID"
+  proxy:
+    user: "UID:GID"

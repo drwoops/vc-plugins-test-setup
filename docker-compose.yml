@@ -1,0 +1,22 @@
+version: '3'
+services:
+  server1:
+    build: ./papermc
+    volumes:
+      - $PWD/server1:/srv/paper/data
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+  server2:
+    build: ./papermc
+    volumes:
+      - $PWD/server2:/srv/paper/data
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+  proxy:
+    build: ./velocity
+    volumes:
+      - $PWD/proxy:/srv/velocity/data
+    ports:
+      - 25577:25577
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t

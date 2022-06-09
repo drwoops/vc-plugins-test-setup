@@ -1,0 +1,4 @@
+/proxy/*
+/server1/*
+/server2/*
+docker-compose.override.yml
