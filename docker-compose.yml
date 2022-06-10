@@ -20,3 +20,12 @@ services:
       - 25577:25577
     stdin_open: true # docker run -i
     tty: true        # docker run -t
+  mysql:
+    image: mysql
+    volumes:
+      - $PWD/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=TRUSTNO1
+      - MYSQL_DATABASE=minecraft
+      - MYSQL_USER=minecraft
+      - MYSQL_PASSWORD=trustno1
