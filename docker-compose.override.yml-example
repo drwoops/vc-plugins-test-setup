@@ -9,3 +9,5 @@ services:
     user: "UID:GID"
   proxy:
     user: "UID:GID"
+  mysql:
+    user: "UID:GID"
