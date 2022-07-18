@@ -3,3 +3,4 @@
 /server2/*
 /mysql/*
 docker-compose.override.yml
+/.idea/
